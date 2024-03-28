@@ -1,3 +1,4 @@
+import Button from "./components/Button";
 import Greet from "./components/Greet"
 import Heading from "./components/Heading";
 import Oscar from "./components/Oscar";
@@ -27,9 +28,10 @@ const App = () => {
       <Person name={name} />
       <PersonList names={nameList} />
       <Status status= {2} /> */}
-      <Oscar>
-        <Heading />
-      </Oscar>
+      {/* <Oscar>
+        <Heading  />
+      </Oscar> */}
+      <Button handleClick= {(event, id) => console.log(event, id) } />
     </div>
   );
 }
